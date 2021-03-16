@@ -91,20 +91,27 @@ sub cacti_db_open {
 sub get_boost_counts {
   my $h_db = shift;
 
-  my $ref_data = execute_query($h_db, 'SELECT count(1) as count from poller_output', 'count');
-  my $count_poller_output  = (keys %{$ref_data})[0];
+  my $count_poller_output  = 0;
+  my $count_poller_output_boost  = 0;
+  my $count_poller_output_boost_arch  = 0;
 
-  $ref_data = execute_query($h_db, 'SELECT count(1) as count from poller_output_boost', 'count');
-  my $count_poller_output_boost  = (keys %{$ref_data})[0];
+  my $ref_data = execute_query($h_db, 'SELECT count(1) as count from poller_output', , 'count',);
+  if (%{$ref_data}) {
+    $count_poller_output  = (keys %{$ref_data})[0];
+  }
 
-  $ref_data = execute_query($h_db, 'SELECT table_name, table_rows FROM information_schema.tables WHERE table_schema = "cacti" AND table_name like "poller_output%"', , 'table_name');
+  $ref_data = execute_query($h_db, 'SELECT count(1) as count from poller_output_boost', , 'count',);
+  if (%{$ref_data}) {
+    $count_poller_output_boost  = (keys %{$ref_data})[0];
+  }
+
+  $ref_data = execute_query($h_db, 'SELECT table_name, table_rows FROM information_schema.tables WHERE table_schema = "cacti" AND table_name like "poller_output%"', , 'table_name',);
   #print $h_debug Dumper($ref_data);
   my $arch_name = (grep(/arch/, keys %{$ref_data}))[0];
-  my $count_poller_output_boost_arch  = 0;
   if (defined $arch_name) {
     #print "counting arch $arch_name...\n";
-    $ref_data = execute_query($h_db, 'SELECT count(1) as count from '.$arch_name, 'count');
-    my $count_poller_output_boost_arch  = (keys %{$ref_data})[0];
+    $ref_data = execute_query($h_db, 'SELECT count(1) as count from '.$arch_name, , 'count',);
+    $count_poller_output_boost_arch  = (keys %{$ref_data})[0];
   }
 
   return ($count_poller_output, $count_poller_output_boost, $count_poller_output_boost_arch);

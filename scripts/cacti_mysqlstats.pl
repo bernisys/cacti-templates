@@ -135,6 +135,8 @@ sub execute_query {
 }
 
 sub get_sqlstats {
+  my $h_db = shift;
+  
   my %stat = %{execute_query($h_db, 'SHOW STATUS', 'Variable_name')};
   foreach my $key (keys %stat) {
     $stat{$key} = $stat{$key}{'Value'};

@@ -31,12 +31,18 @@ my @items;
 if ((!defined $which) or ($which eq 'connections')) {
   push @items, 'Connections', 'Max_used_connections', 'Aborted_connects', 'Aborted_clients', 'Threads_connected';
 }
-if ((!defined $which) or ($which eq 'memory')) {
-  push @items, 'Innodb_mem_adaptive_hash', 'Innodb_mem_dictionary', 'Innodb_mem_total';
+if ((!defined $which) or ($which eq 'inno_mem')) {
+  push @items, 'Innodb_mem_total', 'Innodb_mem_adaptive_hash', 'Innodb_mem_dictionary';
+}
+if ((!defined $which) or ($which eq 'inno_rows')) {
+  push @items, 'Innodb_rows_deleted', 'Innodb_rows_inserted', 'Innodb_rows_read', 'Innodb_rows_updated';
+}
+if ((!defined $which) or ($which eq 'query')) {
+  push @items, 'Queries', 'Slow_queries', 'Select_full_join';
 }
 
 if (@items) {
-  my %stat = get_sqlstats();
+  my %stat = get_sqlstats($h_db);
   foreach my $item (@items) {
     (my $itemname = $item) =~ s/_//g;
     $output .= ' '.$itemname.':'.$stat{$item};

@@ -7,7 +7,7 @@ use strict;
 $| = 1;
 
 #### configuration part
-my $CACTI_CONF_FILE = '/var/www/html/cacti/include/config.php';
+my $CACTI_CONF_FILE = '####INSERT PATH TO CACTI INSTALLATION HERE####/cacti/include/config.php';
 my $CMD_MYSQLADMIN = '/usr/bin/mysqladmin';
 my $VERBOSE = 0;
 

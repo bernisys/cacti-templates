@@ -7,7 +7,7 @@ use strict;
 $| = 1;
 
 #### configuration part
-my $CACTI_CONF_FILE = '####INSERT PATH TO CACTI INSTALLATION HERE####/cacti/include/config.php';
+my $CACTI_CONF_FILE = '/var/www/html/cacti/include/config.php';
 my $CMD_MYSQLADMIN = '/usr/bin/mysqladmin';
 my $VERBOSE = 0;
 
@@ -40,6 +40,16 @@ if ((!defined $which) or ($which eq 'inno_rows')) {
 ### Check for mysql errors 
 if ((!defined $which) or ($which eq 'connection_errors')) {
   push @items, 'Connection_errors_accept', 'Connection_errors_internal', 'Connection_errors_max_connections', 'Connection_errors_peer_address', 'Connection_errors_select', 'Connection_errors_tcpwrap', 'Access_denied_errors';
+}
+
+###innodb Buffer pool pages status
+if ((!defined $which) or ($which eq 'innodb_pool')) {
+  push @items, 'Innodb_buffer_pool_pages_data', 'Innodb_buffer_pool_pages_dirty', 'Innodb_buffer_pool_pages_flushed', 'Innodb_buffer_pool_pages_free ', 'Innodb_buffer_pool_pages_made_not_young', 'Innodb_buffer_pool_pages_made_young', 'Innodb_buffer_pool_pages_misc', 'Innodb_buffer_pool_pages_old', 'Innodb_buffer_pool_pages_total', 'Innodb_buffer_pool_pages_lru_flushed';
+}
+
+###innodb IO status
+if ((!defined $which) or ($which eq 'inno_io')) {
+  push @items, 'Innodb_data_pending_reads', 'Innodb_data_pending_writes', 'Innodb_data_read', 'Innodb_data_reads', 'Innodb_data_writes', 'Innodb_data_written';
 }
 
 

@@ -7,7 +7,7 @@ use strict;
 $| = 1;
 
 #### configuration part
-my $CACTI_CONF_FILE = '####INSERT PATH TO CACTI INSTALLATION HERE####/cacti/include/config.php';
+my $CACTI_CONF_FILE = '/var/www/html/cacti/include/config.php';
 my $CMD_MYSQLADMIN = '/usr/bin/mysqladmin';
 my $VERBOSE = 0;
 
@@ -29,14 +29,21 @@ if ((!defined $which) or ($which eq 'boost')) {
 
 my @items;
 if ((!defined $which) or ($which eq 'connections')) {
-  push @items, 'Connections', 'Max_used_connections', 'Aborted_connects', 'Aborted_clients', 'Threads_connected';
+  push @items, 'Connections', 'Max_used_connections', 'Aborted_connects', 'Aborted_clients', 'Threads_connected', 'Connection_errors_internal';
 }
 if ((!defined $which) or ($which eq 'inno_mem')) {
-  push @items, 'Innodb_mem_total', 'Innodb_mem_adaptive_hash', 'Innodb_mem_dictionary';
+  push @items, 'Innodb_mem_total', 'Innodb_mem_adaptive_hash', 'Innodb_mem_dictionary', 'Innodb_buffer_pool_pages_free', 'Innodb_buffer_pool_pages_total';
 }
 if ((!defined $which) or ($which eq 'inno_rows')) {
   push @items, 'Innodb_rows_deleted', 'Innodb_rows_inserted', 'Innodb_rows_read', 'Innodb_rows_updated';
 }
+### Check for mysql errors 
+if ((!defined $which) or ($which eq 'connection_errors')) {
+  push @items, 'Connection_errors_accept', 'Connection_errors_internal', 'Connection_errors_max_connections', 'Connection_errors_peer_address', 'Connection_errors_select', 'Connection_errors_tcpwrap', 'Access_denied_errors';
+}
+
+
+
 if ((!defined $which) or ($which eq 'query')) {
   push @items, 'Queries', 'Slow_queries', 'Select_full_join';
 }
@@ -66,7 +73,7 @@ sub cacti_config_get_db_params {
   while (my $line = <$h_file>) {
     next if $line !~ /\$r?database/;
     next if $line =~ /^\s*#/;
-    if ($line =~ /^\s*\$(r?)database_(\w+)\s+=\s+'?(.*?)'?;/)
+    if ($line =~ /^\s*\$(r?)database_(\w+)\s+='?\s+?(.*?)'?;/)
     {
       $params{$1}{$2} = $3;
     }
@@ -80,13 +87,18 @@ sub cacti_db_open {
   $ref_params = {cacti_config_get_db_params()}->{''} if (!defined $ref_params);
   
   my $handle = DBI->connect(
-    "DBI:mysql:database=$ref_params->{'default'};host=$ref_params->{'hostname'};port=$ref_params->{'port'};mysql_connect_timeout=2",
+#    "DBI:mysql:database=$ref_params->{'default'};host=$ref_params->{'hostname'};port=$ref_params->{'port'};mysql_connect_timeout=2",
+    "DBI:mysql:database=$ref_params->{'default'};host=$ref_params->{'database_hostname'};mysql_connect_timeout=2",
     $ref_params->{'username'},
     $ref_params->{'password'}
+
+    
   );
 
   return $handle;
+  
 }
+
 
 sub get_boost_counts {
   my $h_db = shift;
@@ -144,3 +156,4 @@ sub get_sqlstats {
 
   return %stat;
 }
+

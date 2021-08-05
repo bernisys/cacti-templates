@@ -1,11 +1,11 @@
 <cacti>	
-	<hash_00010280866d19d7c99ecded676c9a4067806b>
-		<name>Cacti - DB Stats - InnoDB Memory</name>
+	<hash_000102ce6a121dfaa17231aa55a838d87c90fb>
+		<name>Cacti - DB Stats - InnoDB Row Activities</name>
 		<graph>
 			<t_title></t_title>
-			<title>|host_description| - Cacti DB Stats - InnoDB Memory</title>
+			<title>|host_description| - Cacti DB Stats - InnoDB Row Activities</title>
 			<t_vertical_label></t_vertical_label>
-			<vertical_label>bytes</vertical_label>
+			<vertical_label>operations/s</vertical_label>
 			<t_image_format_id></t_image_format_id>
 			<image_format_id>1</image_format_id>
 			<t_height></t_height>
@@ -41,9 +41,9 @@
 			<t_alt_y_grid></t_alt_y_grid>
 			<alt_y_grid></alt_y_grid>
 			<t_right_axis></t_right_axis>
-			<right_axis></right_axis>
+			<right_axis>1000:0</right_axis>
 			<t_right_axis_label></t_right_axis_label>
-			<right_axis_label></right_axis_label>
+			<right_axis_label>read operations/s</right_axis_label>
 			<t_right_axis_format></t_right_axis_format>
 			<right_axis_format>0</right_axis_format>
 			<t_right_axis_formatter></t_right_axis_formatter>
@@ -64,28 +64,28 @@
 			<legend_direction>0</legend_direction>
 		</graph>
 		<items>
-			<hash_1001026902bc878c86d5893a1322fdd92974c0>
-				<graph_type_id>7</graph_type_id>
-				<task_item_id>hash_080102e98f8bd6c22c05cf540d393b6cd63fe9</task_item_id>
+			<hash_10010283dee87e0215f7c5a40461a4ab55a382>
+				<graph_type_id>5</graph_type_id>
+				<task_item_id>hash_08010244bced3248fe5653f27f15f60f59f1e4</task_item_id>
 				<color_id>00FF00</color_id>
 				<alpha>FF</alpha>
-				<consolidation_function_id>3</consolidation_function_id>
-				<cdef_id>0</cdef_id>
+				<consolidation_function_id>1</consolidation_function_id>
+				<cdef_id>hash_05010252e0cc5fea3460999b426d7513e4a5d8</cdef_id>
 				<vdef_id>0</vdef_id>
 				<shift></shift>
 				<value></value>
 				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
 				<textalign></textalign>
-				<text_format>InnoDB Total Memory</text_format>
+				<text_format>Row Reads</text_format>
 				<hard_return></hard_return>
 				<line_width>1.00</line_width>
 				<dashes></dashes>
 				<dash_offset>0</dash_offset>
 				<sequence>1</sequence>
-			</hash_1001026902bc878c86d5893a1322fdd92974c0>
-			<hash_1001029de192a1433ca00f7471fdbb5fb14bd2>
+			</hash_10010283dee87e0215f7c5a40461a4ab55a382>
+			<hash_100102841ad860f9af3c99ac01a9e70ade42e0>
 				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_080102e98f8bd6c22c05cf540d393b6cd63fe9</task_item_id>
+				<task_item_id>hash_08010244bced3248fe5653f27f15f60f59f1e4</task_item_id>
 				<color_id>0</color_id>
 				<alpha>FF</alpha>
 				<consolidation_function_id>4</consolidation_function_id>
@@ -101,10 +101,10 @@
 				<dashes></dashes>
 				<dash_offset>0</dash_offset>
 				<sequence>2</sequence>
-			</hash_1001029de192a1433ca00f7471fdbb5fb14bd2>
-			<hash_100102527175384317cce172545c59b9fb0fb5>
+			</hash_100102841ad860f9af3c99ac01a9e70ade42e0>
+			<hash_1001027e8fc7c7c61a154fe7831d84514471fe>
 				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_080102e98f8bd6c22c05cf540d393b6cd63fe9</task_item_id>
+				<task_item_id>hash_08010244bced3248fe5653f27f15f60f59f1e4</task_item_id>
 				<color_id>0</color_id>
 				<alpha>FF</alpha>
 				<consolidation_function_id>1</consolidation_function_id>
@@ -120,10 +120,10 @@
 				<dashes></dashes>
 				<dash_offset>0</dash_offset>
 				<sequence>3</sequence>
-			</hash_100102527175384317cce172545c59b9fb0fb5>
-			<hash_100102d0e43f64e1506bb6f88e5d27fea454a3>
+			</hash_1001027e8fc7c7c61a154fe7831d84514471fe>
+			<hash_1001028a0d016c55b6b5a8c385dc9b38ebe7ec>
 				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_080102e98f8bd6c22c05cf540d393b6cd63fe9</task_item_id>
+				<task_item_id>hash_08010244bced3248fe5653f27f15f60f59f1e4</task_item_id>
 				<color_id>0</color_id>
 				<alpha>FF</alpha>
 				<consolidation_function_id>3</consolidation_function_id>
@@ -139,29 +139,29 @@
 				<dashes></dashes>
 				<dash_offset>0</dash_offset>
 				<sequence>4</sequence>
-			</hash_100102d0e43f64e1506bb6f88e5d27fea454a3>
-			<hash_1001023520f8724e73e1fd3367d736e9173c7f>
-				<graph_type_id>7</graph_type_id>
-				<task_item_id>hash_0801024d44ef0dbf939c36fb130b52f594100f</task_item_id>
-				<color_id>B041FF</color_id>
+			</hash_1001028a0d016c55b6b5a8c385dc9b38ebe7ec>
+			<hash_100102754cac55cd4e1f3a9094e9ed17c11df8>
+				<graph_type_id>5</graph_type_id>
+				<task_item_id>hash_080102133fcfaf24a9f309a3a31c571b0aa40a</task_item_id>
+				<color_id>306EFF</color_id>
 				<alpha>FF</alpha>
-				<consolidation_function_id>3</consolidation_function_id>
+				<consolidation_function_id>1</consolidation_function_id>
 				<cdef_id>0</cdef_id>
 				<vdef_id>0</vdef_id>
 				<shift></shift>
 				<value></value>
 				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
 				<textalign></textalign>
-				<text_format>InnoDB Mem AdaptiveHash</text_format>
+				<text_format>Row Inserts</text_format>
 				<hard_return></hard_return>
 				<line_width>1.00</line_width>
 				<dashes></dashes>
 				<dash_offset>0</dash_offset>
 				<sequence>5</sequence>
-			</hash_1001023520f8724e73e1fd3367d736e9173c7f>
-			<hash_10010225c3bf9a510af0f7491e4aaafc242e54>
+			</hash_100102754cac55cd4e1f3a9094e9ed17c11df8>
+			<hash_100102c6cec9acbe0bdedef4683e78835b6109>
 				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801024d44ef0dbf939c36fb130b52f594100f</task_item_id>
+				<task_item_id>hash_080102133fcfaf24a9f309a3a31c571b0aa40a</task_item_id>
 				<color_id>0</color_id>
 				<alpha>FF</alpha>
 				<consolidation_function_id>4</consolidation_function_id>
@@ -177,10 +177,10 @@
 				<dashes></dashes>
 				<dash_offset>0</dash_offset>
 				<sequence>6</sequence>
-			</hash_10010225c3bf9a510af0f7491e4aaafc242e54>
-			<hash_10010251db60afd14d1336f47990874a1648d8>
+			</hash_100102c6cec9acbe0bdedef4683e78835b6109>
+			<hash_100102fab9fcfb90370ad4a13f0bfcde2e43ad>
 				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801024d44ef0dbf939c36fb130b52f594100f</task_item_id>
+				<task_item_id>hash_080102133fcfaf24a9f309a3a31c571b0aa40a</task_item_id>
 				<color_id>0</color_id>
 				<alpha>FF</alpha>
 				<consolidation_function_id>1</consolidation_function_id>
@@ -196,10 +196,10 @@
 				<dashes></dashes>
 				<dash_offset>0</dash_offset>
 				<sequence>7</sequence>
-			</hash_10010251db60afd14d1336f47990874a1648d8>
-			<hash_100102bb64044846d88b5f753166eaae98f274>
+			</hash_100102fab9fcfb90370ad4a13f0bfcde2e43ad>
+			<hash_100102644b8e4b29d4490e169076aaa7c00232>
 				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801024d44ef0dbf939c36fb130b52f594100f</task_item_id>
+				<task_item_id>hash_080102133fcfaf24a9f309a3a31c571b0aa40a</task_item_id>
 				<color_id>0</color_id>
 				<alpha>FF</alpha>
 				<consolidation_function_id>3</consolidation_function_id>
@@ -215,29 +215,29 @@
 				<dashes></dashes>
 				<dash_offset>0</dash_offset>
 				<sequence>8</sequence>
-			</hash_100102bb64044846d88b5f753166eaae98f274>
-			<hash_100102028058a95d060ec72f6313b767958293>
-				<graph_type_id>8</graph_type_id>
-				<task_item_id>hash_080102e230509a906f71c444767599fd933a27</task_item_id>
-				<color_id>E56717</color_id>
+			</hash_100102644b8e4b29d4490e169076aaa7c00232>
+			<hash_100102edb413c7215727d8bffb78b2750d43c1>
+				<graph_type_id>5</graph_type_id>
+				<task_item_id>hash_08010202da4f2ca4a387b44efa02824f09eb7e</task_item_id>
+				<color_id>F87217</color_id>
 				<alpha>FF</alpha>
-				<consolidation_function_id>3</consolidation_function_id>
+				<consolidation_function_id>1</consolidation_function_id>
 				<cdef_id>0</cdef_id>
 				<vdef_id>0</vdef_id>
 				<shift></shift>
 				<value></value>
 				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
 				<textalign></textalign>
-				<text_format>InnoDB Mem Dictionary</text_format>
+				<text_format>Row Updates</text_format>
 				<hard_return></hard_return>
 				<line_width>1.00</line_width>
 				<dashes></dashes>
 				<dash_offset>0</dash_offset>
 				<sequence>9</sequence>
-			</hash_100102028058a95d060ec72f6313b767958293>
-			<hash_100102d00e81c2552a4444cd63d52632cf7822>
+			</hash_100102edb413c7215727d8bffb78b2750d43c1>
+			<hash_100102df9e2fa38808dc832d043e40c6d4d185>
 				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_080102e230509a906f71c444767599fd933a27</task_item_id>
+				<task_item_id>hash_08010202da4f2ca4a387b44efa02824f09eb7e</task_item_id>
 				<color_id>0</color_id>
 				<alpha>FF</alpha>
 				<consolidation_function_id>4</consolidation_function_id>
@@ -253,10 +253,10 @@
 				<dashes></dashes>
 				<dash_offset>0</dash_offset>
 				<sequence>10</sequence>
-			</hash_100102d00e81c2552a4444cd63d52632cf7822>
-			<hash_100102b68fb1271c385c74d2f0e8e32d2ea6b5>
+			</hash_100102df9e2fa38808dc832d043e40c6d4d185>
+			<hash_1001024eb2c39104b9a2ebc4b4a5e22ac96c21>
 				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_080102e230509a906f71c444767599fd933a27</task_item_id>
+				<task_item_id>hash_08010202da4f2ca4a387b44efa02824f09eb7e</task_item_id>
 				<color_id>0</color_id>
 				<alpha>FF</alpha>
 				<consolidation_function_id>1</consolidation_function_id>
@@ -272,10 +272,10 @@
 				<dashes></dashes>
 				<dash_offset>0</dash_offset>
 				<sequence>11</sequence>
-			</hash_100102b68fb1271c385c74d2f0e8e32d2ea6b5>
-			<hash_1001025518d506e8e36b7126aef46ed840fdfc>
+			</hash_1001024eb2c39104b9a2ebc4b4a5e22ac96c21>
+			<hash_10010278cf4fa14684fecf5ed8ce8748b4d924>
 				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_080102e230509a906f71c444767599fd933a27</task_item_id>
+				<task_item_id>hash_08010202da4f2ca4a387b44efa02824f09eb7e</task_item_id>
 				<color_id>0</color_id>
 				<alpha>FF</alpha>
 				<consolidation_function_id>3</consolidation_function_id>
@@ -291,33 +291,33 @@
 				<dashes></dashes>
 				<dash_offset>0</dash_offset>
 				<sequence>12</sequence>
-			</hash_1001025518d506e8e36b7126aef46ed840fdfc>
-			<hash_100102ad3e34bbae02daced5a8f5f0627035bd>
-				<graph_type_id>4</graph_type_id>
-				<task_item_id>0</task_item_id>
-				<color_id>C04000</color_id>
+			</hash_10010278cf4fa14684fecf5ed8ce8748b4d924>
+			<hash_1001021f6158ba7ca627ecaa589815179e9347>
+				<graph_type_id>5</graph_type_id>
+				<task_item_id>hash_0801023d0f38a9e0bb1ba8c0357c3e3e792851</task_item_id>
+				<color_id>FF0000</color_id>
 				<alpha>FF</alpha>
 				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>hash_050102f5c95b237e62b6d24eefa53f6df8ada7</cdef_id>
+				<cdef_id>0</cdef_id>
 				<vdef_id>0</vdef_id>
 				<shift></shift>
 				<value></value>
 				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
 				<textalign></textalign>
-				<text_format>Free Memory</text_format>
+				<text_format>Row Deletions</text_format>
 				<hard_return></hard_return>
 				<line_width>1.00</line_width>
 				<dashes></dashes>
 				<dash_offset>0</dash_offset>
 				<sequence>13</sequence>
-			</hash_100102ad3e34bbae02daced5a8f5f0627035bd>
-			<hash_100102a6fa195b438dc5f54ed22987673bfdfd>
+			</hash_1001021f6158ba7ca627ecaa589815179e9347>
+			<hash_10010206ed07769038cb7712b7c174aa582972>
 				<graph_type_id>9</graph_type_id>
-				<task_item_id>0</task_item_id>
+				<task_item_id>hash_0801023d0f38a9e0bb1ba8c0357c3e3e792851</task_item_id>
 				<color_id>0</color_id>
 				<alpha>FF</alpha>
 				<consolidation_function_id>4</consolidation_function_id>
-				<cdef_id>hash_050102f5c95b237e62b6d24eefa53f6df8ada7</cdef_id>
+				<cdef_id>0</cdef_id>
 				<vdef_id>0</vdef_id>
 				<shift></shift>
 				<value></value>
@@ -329,14 +329,14 @@
 				<dashes></dashes>
 				<dash_offset>0</dash_offset>
 				<sequence>14</sequence>
-			</hash_100102a6fa195b438dc5f54ed22987673bfdfd>
-			<hash_100102cf934fa7405e6d5df8dc89df0f28e793>
+			</hash_10010206ed07769038cb7712b7c174aa582972>
+			<hash_100102a7283985c53b8119a5df9f72ef9b2645>
 				<graph_type_id>9</graph_type_id>
-				<task_item_id>0</task_item_id>
+				<task_item_id>hash_0801023d0f38a9e0bb1ba8c0357c3e3e792851</task_item_id>
 				<color_id>0</color_id>
 				<alpha>FF</alpha>
 				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>hash_050102f5c95b237e62b6d24eefa53f6df8ada7</cdef_id>
+				<cdef_id>0</cdef_id>
 				<vdef_id>0</vdef_id>
 				<shift></shift>
 				<value></value>
@@ -348,14 +348,14 @@
 				<dashes></dashes>
 				<dash_offset>0</dash_offset>
 				<sequence>15</sequence>
-			</hash_100102cf934fa7405e6d5df8dc89df0f28e793>
-			<hash_1001026f428c884f90cdc9c87755d118d39487>
+			</hash_100102a7283985c53b8119a5df9f72ef9b2645>
+			<hash_100102eaf4e97adde378e6cfb5239a246a9b5e>
 				<graph_type_id>9</graph_type_id>
-				<task_item_id>0</task_item_id>
+				<task_item_id>hash_0801023d0f38a9e0bb1ba8c0357c3e3e792851</task_item_id>
 				<color_id>0</color_id>
 				<alpha>FF</alpha>
 				<consolidation_function_id>3</consolidation_function_id>
-				<cdef_id>hash_050102f5c95b237e62b6d24eefa53f6df8ada7</cdef_id>
+				<cdef_id>0</cdef_id>
 				<vdef_id>0</vdef_id>
 				<shift></shift>
 				<value></value>
@@ -367,185 +367,203 @@
 				<dashes></dashes>
 				<dash_offset>0</dash_offset>
 				<sequence>16</sequence>
-			</hash_1001026f428c884f90cdc9c87755d118d39487>
+			</hash_100102eaf4e97adde378e6cfb5239a246a9b5e>
 		</items>
 		<inputs>
-			<hash_09010278869294a37d5044c7b8f32a0eb57696>
-				<name>Data Source [mem_total]</name>
+			<hash_090102ec55ba19ffbefcf015b6e9fb2d905234>
+				<name>Data Source [read]</name>
 				<description></description>
 				<column_name>task_item_id</column_name>
-				<items>hash_0001026902bc878c86d5893a1322fdd92974c0|hash_0001029de192a1433ca00f7471fdbb5fb14bd2|hash_000102527175384317cce172545c59b9fb0fb5|hash_000102d0e43f64e1506bb6f88e5d27fea454a3</items>
-			</hash_09010278869294a37d5044c7b8f32a0eb57696>
-			<hash_090102054ea3b5a810d877cb4e36373861866d>
-				<name>Data Source [mem_ahash]</name>
+				<items>hash_00010283dee87e0215f7c5a40461a4ab55a382|hash_000102841ad860f9af3c99ac01a9e70ade42e0|hash_0001027e8fc7c7c61a154fe7831d84514471fe|hash_0001028a0d016c55b6b5a8c385dc9b38ebe7ec</items>
+			</hash_090102ec55ba19ffbefcf015b6e9fb2d905234>
+			<hash_090102f1d17a93d21c9eb68acc29a0fc4698c5>
+				<name>Data Source [insert]</name>
 				<description></description>
 				<column_name>task_item_id</column_name>
-				<items>hash_0001023520f8724e73e1fd3367d736e9173c7f|hash_00010225c3bf9a510af0f7491e4aaafc242e54|hash_00010251db60afd14d1336f47990874a1648d8|hash_000102bb64044846d88b5f753166eaae98f274</items>
-			</hash_090102054ea3b5a810d877cb4e36373861866d>
-			<hash_090102dd8971a34eaa1003c4fd1175c45794c3>
-				<name>Data Source [mem_dict]</name>
+				<items>hash_000102754cac55cd4e1f3a9094e9ed17c11df8|hash_000102c6cec9acbe0bdedef4683e78835b6109|hash_000102fab9fcfb90370ad4a13f0bfcde2e43ad|hash_000102644b8e4b29d4490e169076aaa7c00232</items>
+			</hash_090102f1d17a93d21c9eb68acc29a0fc4698c5>
+			<hash_0901023447c1f86dbff086be6994bd89163927>
+				<name>Data Source [update]</name>
 				<description></description>
 				<column_name>task_item_id</column_name>
-				<items>hash_000102028058a95d060ec72f6313b767958293|hash_000102d00e81c2552a4444cd63d52632cf7822|hash_000102b68fb1271c385c74d2f0e8e32d2ea6b5|hash_0001025518d506e8e36b7126aef46ed840fdfc</items>
-			</hash_090102dd8971a34eaa1003c4fd1175c45794c3>
+				<items>hash_000102edb413c7215727d8bffb78b2750d43c1|hash_000102df9e2fa38808dc832d043e40c6d4d185|hash_0001024eb2c39104b9a2ebc4b4a5e22ac96c21|hash_00010278cf4fa14684fecf5ed8ce8748b4d924</items>
+			</hash_0901023447c1f86dbff086be6994bd89163927>
+			<hash_0901026460a18aa52b68811aad0ede25074632>
+				<name>Data Source [delete]</name>
+				<description></description>
+				<column_name>task_item_id</column_name>
+				<items>hash_0001021f6158ba7ca627ecaa589815179e9347|hash_00010206ed07769038cb7712b7c174aa582972|hash_000102a7283985c53b8119a5df9f72ef9b2645|hash_000102eaf4e97adde378e6cfb5239a246a9b5e</items>
+			</hash_0901026460a18aa52b68811aad0ede25074632>
 		</inputs>
-	</hash_00010280866d19d7c99ecded676c9a4067806b>
-	<hash_01010231ca2373aba01546e4b7d0226ed4680e>
-		<name>Cacti - DB stats - InnoDB Memory</name>
+	</hash_000102ce6a121dfaa17231aa55a838d87c90fb>
+	<hash_0101027e46d9fa1d4bd8a5331aa6e47ede467f>
+		<name>Cacti - DB stats - InnoDB Row Activities</name>
 		<ds>
 			<t_name></t_name>
-			<name>|host_description| - DB Statistics - InnoDB Memory</name>
+			<name>|host_description| - DB Statistics - InnoDB Row Activities</name>
 			<data_source_path></data_source_path>
-			<data_input_id>hash_0301023ac06fd2f71a3d011e88a25cb4946041</data_input_id>
+			<data_input_id>hash_030102d1e10edff26ed48842d20f993071b57b</data_input_id>
 			<t_data_source_profile_id></t_data_source_profile_id>
-			<data_source_profile_id>hash_200102d62c52891f4f9688729a5bc9fad91b18</data_source_profile_id>
+			<data_source_profile_id>hash_20010266d35da8f75c912ede3dbe901fedcae0</data_source_profile_id>
 			<t_rrd_step></t_rrd_step>
-			<rrd_step>300</rrd_step>
+			<rrd_step>60</rrd_step>
 			<t_active></t_active>
 			<active>on</active>
 		</ds>
 		<items>
-			<hash_080102e98f8bd6c22c05cf540d393b6cd63fe9>
+			<hash_0801023d0f38a9e0bb1ba8c0357c3e3e792851>
 				<t_data_source_name></t_data_source_name>
-				<data_source_name>mem_total</data_source_name>
+				<data_source_name>delete</data_source_name>
 				<t_rrd_minimum></t_rrd_minimum>
 				<rrd_minimum>0</rrd_minimum>
 				<t_rrd_maximum></t_rrd_maximum>
 				<rrd_maximum>U</rrd_maximum>
 				<t_data_source_type_id></t_data_source_type_id>
-				<data_source_type_id>1</data_source_type_id>
-				<rrd_heartbeat>600</rrd_heartbeat>
+				<data_source_type_id>2</data_source_type_id>
+				<rrd_heartbeat>120</rrd_heartbeat>
 				<t_data_input_field_id></t_data_input_field_id>
-				<data_input_field_id>hash_0701027aa08981c3f96c44aefb21c0fe048dc2</data_input_field_id>
-			</hash_080102e98f8bd6c22c05cf540d393b6cd63fe9>
-			<hash_080102e230509a906f71c444767599fd933a27>
+				<data_input_field_id>hash_070102762b0062b070af827cce6543039225da</data_input_field_id>
+			</hash_0801023d0f38a9e0bb1ba8c0357c3e3e792851>
+			<hash_08010202da4f2ca4a387b44efa02824f09eb7e>
 				<t_data_source_name></t_data_source_name>
-				<data_source_name>mem_dict</data_source_name>
+				<data_source_name>update</data_source_name>
 				<t_rrd_minimum></t_rrd_minimum>
 				<rrd_minimum>0</rrd_minimum>
 				<t_rrd_maximum></t_rrd_maximum>
 				<rrd_maximum>U</rrd_maximum>
 				<t_data_source_type_id></t_data_source_type_id>
-				<data_source_type_id>1</data_source_type_id>
-				<rrd_heartbeat>600</rrd_heartbeat>
+				<data_source_type_id>2</data_source_type_id>
+				<rrd_heartbeat>120</rrd_heartbeat>
 				<t_data_input_field_id></t_data_input_field_id>
-				<data_input_field_id>hash_0701024c93403897f92e624600cd109fb8e304</data_input_field_id>
-			</hash_080102e230509a906f71c444767599fd933a27>
-			<hash_0801024d44ef0dbf939c36fb130b52f594100f>
+				<data_input_field_id>hash_0701025d25bfa3a3ffa2c2cdbbc1d58dc8ba55</data_input_field_id>
+			</hash_08010202da4f2ca4a387b44efa02824f09eb7e>
+			<hash_080102133fcfaf24a9f309a3a31c571b0aa40a>
 				<t_data_source_name></t_data_source_name>
-				<data_source_name>mem_ahash</data_source_name>
+				<data_source_name>insert</data_source_name>
 				<t_rrd_minimum></t_rrd_minimum>
 				<rrd_minimum>0</rrd_minimum>
 				<t_rrd_maximum></t_rrd_maximum>
 				<rrd_maximum>U</rrd_maximum>
 				<t_data_source_type_id></t_data_source_type_id>
-				<data_source_type_id>1</data_source_type_id>
-				<rrd_heartbeat>600</rrd_heartbeat>
+				<data_source_type_id>2</data_source_type_id>
+				<rrd_heartbeat>120</rrd_heartbeat>
 				<t_data_input_field_id></t_data_input_field_id>
-				<data_input_field_id>hash_070102195a82533f2534f718fd981e3e51def8</data_input_field_id>
-			</hash_0801024d44ef0dbf939c36fb130b52f594100f>
+				<data_input_field_id>hash_070102b4cad3a8fba90353fa941bf716d255d4</data_input_field_id>
+			</hash_080102133fcfaf24a9f309a3a31c571b0aa40a>
+			<hash_08010244bced3248fe5653f27f15f60f59f1e4>
+				<t_data_source_name></t_data_source_name>
+				<data_source_name>read</data_source_name>
+				<t_rrd_minimum></t_rrd_minimum>
+				<rrd_minimum>0</rrd_minimum>
+				<t_rrd_maximum></t_rrd_maximum>
+				<rrd_maximum>U</rrd_maximum>
+				<t_data_source_type_id></t_data_source_type_id>
+				<data_source_type_id>2</data_source_type_id>
+				<rrd_heartbeat>120</rrd_heartbeat>
+				<t_data_input_field_id></t_data_input_field_id>
+				<data_input_field_id>hash_07010248449e2c954499903f88a59cb3e42a9f</data_input_field_id>
+			</hash_08010244bced3248fe5653f27f15f60f59f1e4>
 		</items>
 		<data>
 		</data>
-	</hash_01010231ca2373aba01546e4b7d0226ed4680e>
-	<hash_0301023ac06fd2f71a3d011e88a25cb4946041>
-		<name>Cacti - DB statistics - InnoDB Memory</name>
+	</hash_0101027e46d9fa1d4bd8a5331aa6e47ede467f>
+	<hash_030102d1e10edff26ed48842d20f993071b57b>
+		<name>Cacti - DB statistics - InnoDB Row Activities</name>
 		<type_id>1</type_id>
-		<input_string>cGVybCA8cGF0aF9jYWN0aT4vc2NyaXB0cy9teXNxbHN0YXRzLnBsIGlubm9fbWVt</input_string>
+		<input_string>cGVybCA8cGF0aF9jYWN0aT4vc2NyaXB0cy9teXNxbHN0YXRzLnBsIGlubm9fcm93cw==</input_string>
 		<fields>
-			<hash_0701027aa08981c3f96c44aefb21c0fe048dc2>
-				<fname></fname>
+			<hash_070102762b0062b070af827cce6543039225da>
+				<name></name>
 				<update_rra>on</update_rra>
 				<regexp_match></regexp_match>
 				<allow_nulls></allow_nulls>
 				<type_code></type_code>
 				<input_output>out</input_output>
-				<data_name>Innodbmemtotal</data_name>
-			</hash_0701027aa08981c3f96c44aefb21c0fe048dc2>
-			<hash_070102195a82533f2534f718fd981e3e51def8>
-				<fname></fname>
+				<data_name>Innodbrowsdeleted</data_name>
+			</hash_070102762b0062b070af827cce6543039225da>
+			<hash_070102b4cad3a8fba90353fa941bf716d255d4>
+				<name></name>
 				<update_rra>on</update_rra>
 				<regexp_match></regexp_match>
 				<allow_nulls></allow_nulls>
 				<type_code></type_code>
 				<input_output>out</input_output>
-				<data_name>Innodbmemadaptivehash</data_name>
-			</hash_070102195a82533f2534f718fd981e3e51def8>
-			<hash_0701024c93403897f92e624600cd109fb8e304>
-				<fname></fname>
+				<data_name>Innodbrowsinserted</data_name>
+			</hash_070102b4cad3a8fba90353fa941bf716d255d4>
+			<hash_07010248449e2c954499903f88a59cb3e42a9f>
+				<name></name>
 				<update_rra>on</update_rra>
 				<regexp_match></regexp_match>
 				<allow_nulls></allow_nulls>
 				<type_code></type_code>
 				<input_output>out</input_output>
-				<data_name>Innodbmemdictionary</data_name>
-			</hash_0701024c93403897f92e624600cd109fb8e304>
+				<data_name>Innodbrowsread</data_name>
+			</hash_07010248449e2c954499903f88a59cb3e42a9f>
+			<hash_0701025d25bfa3a3ffa2c2cdbbc1d58dc8ba55>
+				<name></name>
+				<update_rra>on</update_rra>
+				<regexp_match></regexp_match>
+				<allow_nulls></allow_nulls>
+				<type_code></type_code>
+				<input_output>out</input_output>
+				<data_name>Innodbrowsupdated</data_name>
+			</hash_0701025d25bfa3a3ffa2c2cdbbc1d58dc8ba55>
 		</fields>
-	</hash_0301023ac06fd2f71a3d011e88a25cb4946041>
-	<hash_200102d62c52891f4f9688729a5bc9fad91b18>
-		<name>5 Minute Collection</name>
-		<step>300</step>
+	</hash_030102d1e10edff26ed48842d20f993071b57b>
+	<hash_20010266d35da8f75c912ede3dbe901fedcae0>
+		<name>1 Minute Collection</name>
+		<step>60</step>
 		<heartbeat>600</heartbeat>
 		<x_files_factor>0.5</x_files_factor>
 		<default>on</default>
 		<cf_items>1|2|3|4</cf_items>
 		<items>
 			<item_000>
-				<name>Daily (5 Minute Average)</name>
+				<name>Daily (1 Minute Average)</name>
 				<steps>1</steps>
-				<rows>600</rows>
+				<rows>2900</rows>
 				<timespan>86400</timespan>
 			</item_000>
 			<item_001>
-				<name>Weekly (30 Minute Average)</name>
-				<steps>6</steps>
-				<rows>700</rows>
+				<name>Weekly (15 Minute Average)</name>
+				<steps>15</steps>
+				<rows>1440</rows>
 				<timespan>604800</timespan>
 			</item_001>
 			<item_002>
-				<name>Monthly (2 Hour Average)</name>
-				<steps>24</steps>
-				<rows>775</rows>
+				<name>Monthly (1 Hour Average)</name>
+				<steps>60</steps>
+				<rows>8784</rows>
 				<timespan>2618784</timespan>
 			</item_002>
 			<item_003>
-				<name>Yearly (1 Day Average)</name>
-				<steps>288</steps>
-				<rows>797</rows>
+				<name>Yearly (12 Hour Average)</name>
+				<steps>720</steps>
+				<rows>7305</rows>
 				<timespan>31536000</timespan>
 			</item_003>
 		</items>
-	</hash_200102d62c52891f4f9688729a5bc9fad91b18>
-	<hash_050102f5c95b237e62b6d24eefa53f6df8ada7>
-		<name>Cacti - DB Stats - InnoDB Free Memory</name>
+	</hash_20010266d35da8f75c912ede3dbe901fedcae0>
+	<hash_05010252e0cc5fea3460999b426d7513e4a5d8>
+		<name>Divide by 1000 (ping -&gt; ms to s)</name>
 		<items>
-			<hash_140102dce61dab35678082b89929298bec3e9c>
+			<hash_14010241b0182bc21f1d1d3996295cb0af869b>
 				<sequence>1</sequence>
-				<type>6</type>
-				<value>a</value>
-			</hash_140102dce61dab35678082b89929298bec3e9c>
-			<hash_140102f3da8b137f0edff7ea372095464a1972>
+				<type>4</type>
+				<value>CURRENT_DATA_SOURCE</value>
+			</hash_14010241b0182bc21f1d1d3996295cb0af869b>
+			<hash_140102c996096b552a79681207c30a3984de09>
 				<sequence>2</sequence>
 				<type>6</type>
-				<value>b</value>
-			</hash_140102f3da8b137f0edff7ea372095464a1972>
-			<hash_1401024b49cab74dd76a50e70b2ad6916657cc>
+				<value>1000</value>
+			</hash_140102c996096b552a79681207c30a3984de09>
+			<hash_140102d55065b11a862747ba62f999155dee42>
 				<sequence>3</sequence>
 				<type>2</type>
-				<value>2</value>
-			</hash_1401024b49cab74dd76a50e70b2ad6916657cc>
-			<hash_140102bc18cf3585a3aeffeb6d128ee3b37917>
-				<sequence>4</sequence>
-				<type>6</type>
-				<value>c</value>
-			</hash_140102bc18cf3585a3aeffeb6d128ee3b37917>
-			<hash_1401025d75d91b452de1dfd97af56d1bc58ad3>
-				<sequence>5</sequence>
-				<type>2</type>
-				<value>2</value>
-			</hash_1401025d75d91b452de1dfd97af56d1bc58ad3>
+				<value>4</value>
+			</hash_140102d55065b11a862747ba62f999155dee42>
 		</items>
-	</hash_050102f5c95b237e62b6d24eefa53f6df8ada7>
+	</hash_05010252e0cc5fea3460999b426d7513e4a5d8>
 	<hash_060102e9c43831e54eca8069317a2ce8c6f751>
 		<name>Normal</name>
 		<gprint_text>%8.2lf %s</gprint_text>

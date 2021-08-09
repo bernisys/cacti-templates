@@ -83,7 +83,9 @@ sub cacti_config_get_db_params {
   while (my $line = <$h_file>) {
     next if $line !~ /\$r?database/;
     next if $line =~ /^\s*#/;
-    if ($line =~ /^\s*\$(r?)database_(\w+)\s+='?\s\'+?(.*?)'?;/)
+   
+    if ($line =~ /^\s*\$(r?)database_(\w+)\s+='?\s\'+?(.*?)'?;/) ###comment out if not  single quotes
+    #if ($line =~ /^\s*\$(r?)database_(\w+)\s+='?\s\"+?(.*?)"?;/) ###Uncomment if using double quotes 
     {
       $params{$1}{$2} = $3;
       

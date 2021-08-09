@@ -6,3 +6,5 @@ It is still in development, but i plan to include all my statistic templates for
 
 Feel free to contribute!
 
+Originally forked from bernisys/cacti-templates
+

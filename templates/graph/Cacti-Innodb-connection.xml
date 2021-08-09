@@ -41,11 +41,11 @@
 			<t_alt_y_grid></t_alt_y_grid>
 			<alt_y_grid></alt_y_grid>
 			<t_right_axis></t_right_axis>
-			<right_axis>0.001:0</right_axis>
+			<right_axis></right_axis>
 			<t_right_axis_label></t_right_axis_label>
 			<right_axis_label>aborts</right_axis_label>
 			<t_right_axis_format></t_right_axis_format>
-			<right_axis_format>2</right_axis_format>
+			<right_axis_format>0</right_axis_format>
 			<t_right_axis_formatter></t_right_axis_formatter>
 			<right_axis_formatter>0</right_axis_formatter>
 			<t_left_axis_formatter></t_left_axis_formatter>
@@ -368,6 +368,82 @@
 				<dash_offset>0</dash_offset>
 				<sequence>16</sequence>
 			</hash_100102c57654199f3aa86f3a1e477a64612aad>
+			<hash_1001026bb83eb4981077bd248be9b5c588b903>
+				<graph_type_id>5</graph_type_id>
+				<task_item_id>hash_080102ae216f1202cfd17001b7cc216591263b</task_item_id>
+				<color_id>C24641</color_id>
+				<alpha>FF</alpha>
+				<consolidation_function_id>4</consolidation_function_id>
+				<cdef_id>0</cdef_id>
+				<vdef_id>0</vdef_id>
+				<shift></shift>
+				<value></value>
+				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<textalign></textalign>
+				<text_format>Internal Errors</text_format>
+				<hard_return></hard_return>
+				<line_width>1.00</line_width>
+				<dashes></dashes>
+				<dash_offset>0</dash_offset>
+				<sequence>17</sequence>
+			</hash_1001026bb83eb4981077bd248be9b5c588b903>
+			<hash_1001026c94399d04918735ecf9c90c154dbf07>
+				<graph_type_id>11</graph_type_id>
+				<task_item_id>hash_080102ae216f1202cfd17001b7cc216591263b</task_item_id>
+				<color_id>0</color_id>
+				<alpha>FF</alpha>
+				<consolidation_function_id>4</consolidation_function_id>
+				<cdef_id>0</cdef_id>
+				<vdef_id>0</vdef_id>
+				<shift></shift>
+				<value></value>
+				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<textalign></textalign>
+				<text_format>Curr</text_format>
+				<hard_return></hard_return>
+				<line_width>1.00</line_width>
+				<dashes></dashes>
+				<dash_offset>0</dash_offset>
+				<sequence>18</sequence>
+			</hash_1001026c94399d04918735ecf9c90c154dbf07>
+			<hash_10010274180013195f51fa31d1776ff0a14360>
+				<graph_type_id>11</graph_type_id>
+				<task_item_id>hash_080102ae216f1202cfd17001b7cc216591263b</task_item_id>
+				<color_id>0</color_id>
+				<alpha>FF</alpha>
+				<consolidation_function_id>4</consolidation_function_id>
+				<cdef_id>0</cdef_id>
+				<vdef_id>0</vdef_id>
+				<shift></shift>
+				<value></value>
+				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<textalign></textalign>
+				<text_format>Avg</text_format>
+				<hard_return></hard_return>
+				<line_width>1.00</line_width>
+				<dashes></dashes>
+				<dash_offset>0</dash_offset>
+				<sequence>19</sequence>
+			</hash_10010274180013195f51fa31d1776ff0a14360>
+			<hash_100102429fa2607a4ac360f92d30802b5a2045>
+				<graph_type_id>13</graph_type_id>
+				<task_item_id>hash_080102ae216f1202cfd17001b7cc216591263b</task_item_id>
+				<color_id>0</color_id>
+				<alpha>FF</alpha>
+				<consolidation_function_id>3</consolidation_function_id>
+				<cdef_id>0</cdef_id>
+				<vdef_id>0</vdef_id>
+				<shift></shift>
+				<value></value>
+				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<textalign></textalign>
+				<text_format>Max</text_format>
+				<hard_return>on</hard_return>
+				<line_width>1.00</line_width>
+				<dashes></dashes>
+				<dash_offset>0</dash_offset>
+				<sequence>20</sequence>
+			</hash_100102429fa2607a4ac360f92d30802b5a2045>
 		</items>
 		<inputs>
 			<hash_090102480ca6c36af3cce0f473e3b1bd6b8fa8>
@@ -394,6 +470,12 @@
 				<column_name>task_item_id</column_name>
 				<items>hash_00010238b32d5ea65ebd267e7545f666ce0b4a|hash_0001025b11a4dd79cd8b6dd83101d8f986d559|hash_000102f3214f6ea0326c53e9b57716bc12c32c|hash_000102118da40bcc65dbdb48765235a251d2ba</items>
 			</hash_090102c2d86d6be0d6c51004cd98f20ec696f7>
+			<hash_09010219df3b14bcfc4fe0422fb66b0a9a40ce>
+				<name>Data Source [intern_err]</name>
+				<description></description>
+				<column_name>task_item_id</column_name>
+				<items>hash_0001026bb83eb4981077bd248be9b5c588b903|hash_000102429fa2607a4ac360f92d30802b5a2045|hash_00010274180013195f51fa31d1776ff0a14360|hash_0001026c94399d04918735ecf9c90c154dbf07</items>
+			</hash_09010219df3b14bcfc4fe0422fb66b0a9a40ce>
 		</inputs>
 	</hash_00010208e101bd41966e0e98065e8753d1310f>
 	<hash_0101021ac6b33f1e4af1a5f7992a23fb8d400b>
@@ -404,9 +486,9 @@
 			<data_source_path></data_source_path>
 			<data_input_id>hash_0301026314dbc9ac34fd050c89b46e2e292245</data_input_id>
 			<t_data_source_profile_id></t_data_source_profile_id>
-			<data_source_profile_id>hash_200102d62c52891f4f9688729a5bc9fad91b18</data_source_profile_id>
+			<data_source_profile_id>hash_20010266d35da8f75c912ede3dbe901fedcae0</data_source_profile_id>
 			<t_rrd_step></t_rrd_step>
-			<rrd_step>300</rrd_step>
+			<rrd_step>60</rrd_step>
 			<t_active></t_active>
 			<active>on</active>
 		</ds>
@@ -420,7 +502,7 @@
 				<rrd_maximum>U</rrd_maximum>
 				<t_data_source_type_id></t_data_source_type_id>
 				<data_source_type_id>2</data_source_type_id>
-				<rrd_heartbeat>600</rrd_heartbeat>
+				<rrd_heartbeat>120</rrd_heartbeat>
 				<t_data_input_field_id></t_data_input_field_id>
 				<data_input_field_id>hash_07010206985f62cde1698db6bbbac4ad8ae5f6</data_input_field_id>
 			</hash_080102910a52d8aefea2111fe8a1a07bb697c0>
@@ -433,7 +515,7 @@
 				<rrd_maximum>U</rrd_maximum>
 				<t_data_source_type_id></t_data_source_type_id>
 				<data_source_type_id>1</data_source_type_id>
-				<rrd_heartbeat>600</rrd_heartbeat>
+				<rrd_heartbeat>120</rrd_heartbeat>
 				<t_data_input_field_id></t_data_input_field_id>
 				<data_input_field_id>hash_070102f7c19d6a470273ea1cead916d193a4ed</data_input_field_id>
 			</hash_0801020f23fb76555f0ac4f1a53b15c40c12ae>
@@ -446,7 +528,7 @@
 				<rrd_maximum>50000</rrd_maximum>
 				<t_data_source_type_id></t_data_source_type_id>
 				<data_source_type_id>2</data_source_type_id>
-				<rrd_heartbeat>600</rrd_heartbeat>
+				<rrd_heartbeat>120</rrd_heartbeat>
 				<t_data_input_field_id></t_data_input_field_id>
 				<data_input_field_id>hash_070102d1ef98e2ce88e76783fe9fa7763d3cda</data_input_field_id>
 			</hash_080102e8109ff2558095e18d52337b94b58706>
@@ -459,7 +541,7 @@
 				<rrd_maximum>50000</rrd_maximum>
 				<t_data_source_type_id></t_data_source_type_id>
 				<data_source_type_id>2</data_source_type_id>
-				<rrd_heartbeat>600</rrd_heartbeat>
+				<rrd_heartbeat>120</rrd_heartbeat>
 				<t_data_input_field_id></t_data_input_field_id>
 				<data_input_field_id>hash_07010252277228204485e5f61ff0f9897b1948</data_input_field_id>
 			</hash_080102717a90fc8c6462b8ac765fbbd174b4a5>
@@ -472,10 +554,23 @@
 				<rrd_maximum>U</rrd_maximum>
 				<t_data_source_type_id></t_data_source_type_id>
 				<data_source_type_id>1</data_source_type_id>
-				<rrd_heartbeat>600</rrd_heartbeat>
+				<rrd_heartbeat>120</rrd_heartbeat>
 				<t_data_input_field_id></t_data_input_field_id>
 				<data_input_field_id>hash_0701025b7e121a66e8592ad0e92ae6e7fd95cf</data_input_field_id>
 			</hash_080102cd42214198df1bcc8893530211fc25d0>
+			<hash_080102ae216f1202cfd17001b7cc216591263b>
+				<t_data_source_name></t_data_source_name>
+				<data_source_name>intern_err</data_source_name>
+				<t_rrd_minimum></t_rrd_minimum>
+				<rrd_minimum>0</rrd_minimum>
+				<t_rrd_maximum></t_rrd_maximum>
+				<rrd_maximum>U</rrd_maximum>
+				<t_data_source_type_id></t_data_source_type_id>
+				<data_source_type_id>2</data_source_type_id>
+				<rrd_heartbeat>600</rrd_heartbeat>
+				<t_data_input_field_id></t_data_input_field_id>
+				<data_input_field_id>hash_070102197b4fcb9aef47f5f917f162e0f8dee6</data_input_field_id>
+			</hash_080102ae216f1202cfd17001b7cc216591263b>
 		</items>
 		<data>
 		</data>
@@ -486,7 +581,7 @@
 		<input_string>cGVybCA8cGF0aF9jYWN0aT4vc2NyaXB0cy9teXNxbHN0YXRzLnBsIGNvbm5lY3Rpb25z</input_string>
 		<fields>
 			<hash_07010206985f62cde1698db6bbbac4ad8ae5f6>
-				<fname></fname>
+				<name></name>
 				<update_rra>on</update_rra>
 				<regexp_match></regexp_match>
 				<allow_nulls></allow_nulls>
@@ -495,7 +590,7 @@
 				<data_name>Connections</data_name>
 			</hash_07010206985f62cde1698db6bbbac4ad8ae5f6>
 			<hash_070102f7c19d6a470273ea1cead916d193a4ed>
-				<fname></fname>
+				<name></name>
 				<update_rra>on</update_rra>
 				<regexp_match></regexp_match>
 				<allow_nulls></allow_nulls>
@@ -504,7 +599,7 @@
 				<data_name>Maxusedconnections</data_name>
 			</hash_070102f7c19d6a470273ea1cead916d193a4ed>
 			<hash_070102d1ef98e2ce88e76783fe9fa7763d3cda>
-				<fname></fname>
+				<name></name>
 				<update_rra>on</update_rra>
 				<regexp_match></regexp_match>
 				<allow_nulls></allow_nulls>
@@ -513,7 +608,7 @@
 				<data_name>Abortedconnects</data_name>
 			</hash_070102d1ef98e2ce88e76783fe9fa7763d3cda>
 			<hash_0701025b7e121a66e8592ad0e92ae6e7fd95cf>
-				<fname></fname>
+				<name></name>
 				<update_rra>on</update_rra>
 				<regexp_match></regexp_match>
 				<allow_nulls></allow_nulls>
@@ -522,7 +617,7 @@
 				<data_name>Threadsconnected</data_name>
 			</hash_0701025b7e121a66e8592ad0e92ae6e7fd95cf>
 			<hash_07010252277228204485e5f61ff0f9897b1948>
-				<fname></fname>
+				<name></name>
 				<update_rra>on</update_rra>
 				<regexp_match></regexp_match>
 				<allow_nulls></allow_nulls>
@@ -530,42 +625,51 @@
 				<input_output>out</input_output>
 				<data_name>Abortedclients</data_name>
 			</hash_07010252277228204485e5f61ff0f9897b1948>
+			<hash_070102197b4fcb9aef47f5f917f162e0f8dee6>
+				<name>Connection errors internal</name>
+				<update_rra>on</update_rra>
+				<regexp_match></regexp_match>
+				<allow_nulls></allow_nulls>
+				<type_code></type_code>
+				<input_output>out</input_output>
+				<data_name>Connectionerrorsinternal</data_name>
+			</hash_070102197b4fcb9aef47f5f917f162e0f8dee6>
 		</fields>
 	</hash_0301026314dbc9ac34fd050c89b46e2e292245>
-	<hash_200102d62c52891f4f9688729a5bc9fad91b18>
-		<name>5 Minute Collection</name>
-		<step>300</step>
+	<hash_20010266d35da8f75c912ede3dbe901fedcae0>
+		<name>1 Minute Collection</name>
+		<step>60</step>
 		<heartbeat>600</heartbeat>
 		<x_files_factor>0.5</x_files_factor>
 		<default>on</default>
 		<cf_items>1|2|3|4</cf_items>
 		<items>
 			<item_000>
-				<name>Daily (5 Minute Average)</name>
+				<name>Daily (1 Minute Average)</name>
 				<steps>1</steps>
-				<rows>600</rows>
+				<rows>2900</rows>
 				<timespan>86400</timespan>
 			</item_000>
 			<item_001>
-				<name>Weekly (30 Minute Average)</name>
-				<steps>6</steps>
-				<rows>700</rows>
+				<name>Weekly (15 Minute Average)</name>
+				<steps>15</steps>
+				<rows>1440</rows>
 				<timespan>604800</timespan>
 			</item_001>
 			<item_002>
-				<name>Monthly (2 Hour Average)</name>
-				<steps>24</steps>
-				<rows>775</rows>
+				<name>Monthly (1 Hour Average)</name>
+				<steps>60</steps>
+				<rows>8784</rows>
 				<timespan>2618784</timespan>
 			</item_002>
 			<item_003>
-				<name>Yearly (1 Day Average)</name>
-				<steps>288</steps>
-				<rows>797</rows>
+				<name>Yearly (12 Hour Average)</name>
+				<steps>720</steps>
+				<rows>7305</rows>
 				<timespan>31536000</timespan>
 			</item_003>
 		</items>
-	</hash_200102d62c52891f4f9688729a5bc9fad91b18>
+	</hash_20010266d35da8f75c912ede3dbe901fedcae0>
 	<hash_0501023bcb7240b73e5c523cb73740e15378e6>
 		<name>Multiply by 1000</name>
 		<items>
